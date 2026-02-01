@@ -6,16 +6,24 @@
 Пример с метанита https://metanit.com/sharp/tutorial/21.2.php
 
 
-run in cmd as admin:
+Запускать в cmd как админу:
 cd C:\Windows\Microsoft.NET\Framework64\v4.0.30319
 InstallUtil.exe C:\Users\Alexander\source\.Net\WIndows-Services-\FileWatcherService\WindowsService1\bin\Debug\WindowsService1.exe
 
-delete service:
+грохнуть служба:
 InstallUtil.exe /u C:\Users\Alexander\source\.Net\WIndows-Services-\FileWatcherService\WindowsService1\bin\Debug\WindowsService1.exe
 
 В списке служб называется Service1
 
+Ручаная Запуск\Остановка не из Диспетчера, а из спец. окна со Службами
+
+В корне D:\\ создан папка TempServices (тут будут происходить изменения) & файлик templog.txt (куда будут писаться изменения).
+
+
 #############################################
+'windows service pet project with api'
+'windows service pet project ideas'
+
 
 API Service
 
