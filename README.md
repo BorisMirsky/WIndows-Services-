@@ -3,37 +3,28 @@
 
 
 
-Пример с метанита https://metanit.com/sharp/tutorial/21.2.php
+Реализованный пример с Метанита https://metanit.com/sharp/tutorial/21.2.php
 
 
-Запускать в cmd как админу:
+Запуск службы
+
+cmd с правами админа:
+
 cd C:\Windows\Microsoft.NET\Framework64\v4.0.30319
-InstallUtil.exe C:\Users\Alexander\source\.Net\WIndows-Services-\FileWatcherService\WindowsService1\bin\Debug\WindowsService1.exe
 
-грохнуть служба:
+InstallUtil.exe xxxxxxx\source\.Net\WIndows-Services-\FileWatcherService\WindowsService1\bin\Debug\WindowsService1.exe
+
+Удаление службы:
+
 InstallUtil.exe /u C:\Users\Alexander\source\.Net\WIndows-Services-\FileWatcherService\WindowsService1\bin\Debug\WindowsService1.exe
 
-В списке служб называется Service1
+Название в списке служб Service1.
 
-Ручаная Запуск\Остановка не из Диспетчера, а из спец. окна со Службами
+Ручные Запуск\Остановка производятся из спец. окна со Службами (т.е. не из Task Manager).
 
-В корне D:\\ создан папка TempServices (тут будут происходить изменения) & файлик templog.txt (куда будут писаться изменения).
-
-
-#############################################
-'windows service pet project with api'
-'windows service pet project ideas'
+В корне D:\\ создана папка TempServices (тут будут происходить изменения) & файлик templog.txt (куда будут писаться изменения).
 
 
-API Service
 
-todo:
-1) продумать логику (что будет делать АПИ):
-сбор данных о курсе валюты, о погоде, о восходе-закате солнца
-
-2) помещение их в папку
-
-
-3)
 
 
