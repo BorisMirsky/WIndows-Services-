@@ -22,7 +22,7 @@ InstallUtil.exe /u C:\Users\Alexander\source\.Net\WIndows-Services-\FileWatcherS
 
 Ручные Запуск\Остановка производятся из спец. окна со Службами (т.е. не из Task Manager).
 
-В корне D:\\ создана папка TempServices (тут будут происходить изменения) & файлик templog.txt (куда будут писаться изменения).
+В корне С:\\ создана папка TempServices (тут будут происходить изменения) & файлик templog.txt (куда будут писаться изменения).
 
 
 

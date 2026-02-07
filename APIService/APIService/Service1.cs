@@ -39,7 +39,7 @@ namespace APIService
         bool enabled = true;
         public Logger()
         {
-            watcher = new FileSystemWatcher("C:\\TempServices");
+            watcher = new FileSystemWatcher("C:\\SunRisesAndSets");
             watcher.Deleted += Watcher_Deleted;
             watcher.Created += Watcher_Created;
             watcher.Changed += Watcher_Changed;
@@ -59,6 +59,7 @@ namespace APIService
             watcher.EnableRaisingEvents = false;
             enabled = false;
         }
+
         // переименование файлов
         private void Watcher_Renamed(object sender, RenamedEventArgs e)
         {
@@ -66,6 +67,7 @@ namespace APIService
             string filePath = e.OldFullPath;
             RecordEntry(fileEvent, filePath);
         }
+        
         // изменение файлов
         private void Watcher_Changed(object sender, FileSystemEventArgs e)
         {
@@ -73,6 +75,7 @@ namespace APIService
             string filePath = e.FullPath;
             RecordEntry(fileEvent, filePath);
         }
+        
         // создание файлов
         private void Watcher_Created(object sender, FileSystemEventArgs e)
         {
@@ -80,6 +83,7 @@ namespace APIService
             string filePath = e.FullPath;
             RecordEntry(fileEvent, filePath);
         }
+        
         // удаление файлов
         private void Watcher_Deleted(object sender, FileSystemEventArgs e)
         {
