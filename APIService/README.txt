@@ -29,5 +29,10 @@ C:\SunRisesAndSets   - папка для сбора данных 'восход �
 - пишет за сегодня.
 
 
+#######################
+
+InstallUtil.exe C:\Users\Alexander\source\.Net\WIndows-Services-\APIService\APIService\bin\Debug\APIService.exe
+
+InstallUtil.exe /u C:\Users\Alexander\source\.Net\WIndows-Services-\APIService\APIService\bin\Debug\APIService.exe
 
 

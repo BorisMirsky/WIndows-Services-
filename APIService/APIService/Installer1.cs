@@ -20,7 +20,7 @@ namespace APIService
 
             processInstaller.Account = ServiceAccount.LocalSystem;
             serviceInstaller.StartType = ServiceStartMode.Manual;
-            serviceInstaller.ServiceName = "Service1";
+            serviceInstaller.ServiceName = "ServiceAPISunriseSunset";
             Installers.Add(processInstaller);
             Installers.Add(serviceInstaller);
         }
