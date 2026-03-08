@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.ServiceProcess;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ServiceProcess;
 
-namespace APIService
+namespace CurrencyService
 {
-    internal static class Program
+    static class Program
     {
         /// <summary>
-        /// The main entry point for the application.
+        /// Главная точка входа для приложения.
         /// </summary>
         static void Main()
         {
