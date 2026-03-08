@@ -10,7 +10,7 @@
         /// <summary>
         /// Освободить все используемые ресурсы.
         /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        /// <param name="disposing"> true, если управляемый ресурс должен быть удален; иначе false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,7 +20,7 @@
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором компонентов
+        #region 
 
         /// <summary> 
         /// Требуемый метод для поддержки конструктора — не изменяйте 
@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            //this.ServiceName = "Service1";
             this.ServiceName = "CurrencyService";
         }
 

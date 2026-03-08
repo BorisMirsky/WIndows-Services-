@@ -20,10 +20,10 @@ namespace CurrencyService
         public Service1()
         {
             InitializeComponent();
-            this.ServiceName = "CurrencyService";
-            this.CanStop = true;
-            this.CanPauseAndContinue = false;
-            this.AutoLog = true; // Включить логирование в EventLog
+            ServiceName = "CurrencyService";
+            CanStop = true;
+            CanPauseAndContinue = false;
+            AutoLog = true; // Включить логирование в EventLog
         }
 
         protected override void OnStart(string[] args)
@@ -35,12 +35,12 @@ namespace CurrencyService
             logFilePath = Path.Combine(baseDir, "C:\\TempServices\\CurrencyLog.txt");
 
             // Настройка таймера на интервал 1 час (3600000 миллисекунд)
-            timer = new Timer(3600000); // 1 час
+            timer = new Timer(3600000); 
             timer.Elapsed += OnTimerElapsed;
             timer.AutoReset = true;
             timer.Start();
 
-            // Сразу выполняем запрос при старте, чтобы не ждать час
+            // Сразу выполняем запрос при старте
             Task.Run(() => FetchAndLogData());
         }
 
@@ -56,7 +56,7 @@ namespace CurrencyService
             await FetchAndLogData();
         }
 
-        private async System.Threading.Tasks.Task FetchAndLogData()
+        private async Task FetchAndLogData()
         {
             try
             {

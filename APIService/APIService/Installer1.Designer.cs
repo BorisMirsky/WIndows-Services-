@@ -10,7 +10,6 @@
         /// <summary> 
         /// Освободить все используемые ресурсы.
         /// </summary>
-        /// <param name="disposing"> true, если управляемый ресурс должен быть удален; иначе false</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))

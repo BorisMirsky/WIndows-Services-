@@ -5,7 +5,7 @@
 
 _____________FileWatcherService_____________
 
-Запуск службы
+Установка (инсталляция) службы
 В cmd с правами админа:
 1) cd C:\Windows\Microsoft.NET\Framework64\v4.0.30319
 2) InstallUtil.exe xxxxxxx\WIndows-Services-\FileWatcherService\WindowsService1\bin\Debug\WindowsService1.exe
@@ -21,12 +21,25 @@ InstallUtil.exe /u ххххххх\WIndows-Services-\FileWatcherService\WindowsSe
 В корне С:\\ создана папка TempServices (тут будут происходить изменения) & файл templog.txt (куда будут писаться изменения).
 
 
+Запуск службы
+В списке службы вручную перевести статус службы с Stopped на Running.
 
 _____________APIService_____________
 
 
-Запуск службы
+Установка (инсталляция) службы
 В cmd с правами админа:
 1) cd C:\Windows\Microsoft.NET\Framework64\v4.0.30319
-2) InstallUtil.exe C:\Users\Alexander\source\.Net\WIndows-Services-\APIService\APIService\bin\Debug\APIService.exe
+2) InstallUtil.exe C:\Users\ххххххх\source\.Net\WIndows-Services-\APIService\APIService\bin\Debug\APIService.exe
 
+
+Удаление службы
+В cmd с правами админа:
+InstallUtil.exe /u C:\Users\ххххххх\source\.Net\WIndows-Services-\APIService\APIService\bin\Debug\APIService.exe
+
+
+Название в списке служб будет CurrencyService.
+
+
+Запуск службы
+В списке службы вручную перевести статус службы с Stopped на Running.
