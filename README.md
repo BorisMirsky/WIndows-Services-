@@ -3,53 +3,58 @@
 
 
 
-_____________FileWatcherService_____________
+### FileWatcherService
 
-Установка (инсталляция) службы
+Служба наблюдает за изменениями в папке 'C:\TempServices'. Все изменения заносятся в файл 'templog.txt'.
 
-В cmd с правами админа:
-1) cd C:\Windows\Microsoft.NET\Framework64\v4.0.30319
-2) InstallUtil.exe xxxxxxx\WIndows-Services-\FileWatcherService\WindowsService1\bin\Debug\WindowsService1.exe
-
-
-Удаление службы
+##### Установка.
 
 В cmd с правами админа:
-
-2) InstallUtil.exe /u ххххххх\WIndows-Services-\FileWatcherService\WindowsService1\bin\Debug\WindowsService1.exe
-
-
-Название в списке служб будет Service1.
-
-Ручные Запуск\Остановка производятся из отдельного окна со Службами (не из Task Manager).
-
-В корне С:\\ создана папка TempServices (тут будут происходить изменения) & файл templog.txt (куда будут писаться изменения).
+1) 'cd C:\Windows\Microsoft.NET\Framework64\v4.0.30319'
+2) 'InstallUtil.exe xxxxxxx\WIndows-Services-\FileWatcherService\WindowsService1\bin\Debug\WindowsService1.exe'
 
 
-Запуск службы
+##### Удаление.
 
-В списке службы вручную перевести статус службы с Stopped на Running.
+В cmd с правами админа:
 
-_____________APIService_____________
+'InstallUtil.exe /u ххххххх\WIndows-Services-\FileWatcherService\WindowsService1\bin\Debug\WindowsService1.exe'
 
 
-Установка (инсталляция) службы.
+
+##### Запуск\Остановка.
+
+Название в списке служб будет 'Service1'.
+
+Ручные 'Запуск\Остановка' производятся из отдельного окна служб.
+
+В списке службы вручную перевести статус службы с 'Stopped' на 'Running'.
+
+
+---
+
+### APIService
+
+
+##### Установка.
 
 В cmd с правами админа:
 1) cd C:\Windows\Microsoft.NET\Framework64\v4.0.30319
 2) InstallUtil.exe C:\Users\ххххххх\source\.Net\WIndows-Services-\APIService\APIService\bin\Debug\APIService.exe
 
 
-Удаление службы
+##### Удаление.
 
 В cmd с правами админа:
 
 InstallUtil.exe /u C:\Users\ххххххх\source\.Net\WIndows-Services-\APIService\APIService\bin\Debug\APIService.exe
 
 
-Название в списке служб будет CurrencyService.
+##### Запуск.
 
+Название в списке служб будет 'CurrencyService'.
 
-Запуск службы
+В списке служб вручную перевести статус службы с 'Stopped' на 'Running'.
 
-В списке службы вручную перевести статус службы с Stopped на Running.
+Ручные 'Запуск\Остановка' производятся из отдельного окна служб.
+
